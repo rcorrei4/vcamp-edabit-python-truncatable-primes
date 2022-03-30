@@ -48,9 +48,9 @@ def truncatable(n):
 
 	if left_truncatable and right_truncatable:
 		return 'both'
-	if left_truncatable and not right_truncatable:
+	if left_truncatable:
 		return 'left'
-	if not left_truncatable and right_truncatable:
+	if right_truncatable:
 		return 'right'
 
 	return False
